@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="addProject.css">
+        <link rel="stylesheet" href="global.css">
+        <link rel="stylesheet" href="/ProjectList/projectList.css">
+        <link rel="stylesheet" href="/creditHistory/creditHistory.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="bgPrimaryContainer"></div>
+        <!-- navbar component -->
+        <nav class="navContainer">
+            <div>
+                <img src="/assets/logo.svg" alt="logo">
+            </div>
+            <div class="navRightContainer">
+                <div class="navRightOne">
+                   <ul style="list-style: none; display: flex; align-items: center; justify-content: space-between; width: 400px;">
+                    <li style="display: flex; align-items: center; gap: 2px;"><p>Campaigns</p> <span><img src="/assets/chevron-down.svg" style="padding-top: 5px;" alt=""></span></li>
+                    <li style="display: flex; align-items: center; gap: 2px;"><p>Tools</p> <span><img src="/assets/chevron-down.svg" style="padding-top: 5px;" alt=""></span></li>
+                    <li>Library</li>
+                    <li>TV Eyes <span style="font-size: smaller;">(Beta)</span></li>
+                   </ul>
+                </div>
+                <p class="navDiv"></p>
+                <div class="navRightTwo">
+                    <div>
+                        <img class="houseIcon" src="/assets/envelope-solid 1.svg" alt="envelope">
+                        <p class="messageCount">2</p>
+                    </div>
+                    <div class="profileContainer">
+                        <img class="profileIcon" src="/assets/people-mosaic_3 1.svg" alt="profile">
+                        <p style="color: black;">Jason Smith</p>
+                        <i class="fa-solid fa-angle-down" style="color: white;"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- --- Store Optimization --- -->
+        <div class="storeOptimizationContainer">
+            <div style="display: flex; justify-content: space-between; padding: 40px 40px 20px 40px;">
+                <h2>Store Optimization
+                </h2>
+                <button class="exportButton">
+                    <img src="/assets/file-export-solid 1.svg" alt="back">
+                    <p style="color: black;">Export</p>
+                </button>
+            </div>
+            <div class="storeOptimizationContentContainer">
+
+                <p style="font-weight: bold;">Define Campaign</p>
+                <div style="display: flex; align-items: center; margin: 20px 0;">
+                    <p style="color: #555555; width: 300px;">Campaign Name * </p>
+                    <input class="storeOptimizationInput" type="text" placeholder="Campaign ABC">
+                </div>
+                <div style="display: flex; align-items: center; margin: 20px 0;">
+                    <p style="color: #555555; width: 300px;">Campaign ID * </p>
+                    <input class="storeOptimizationInput" type="text" placeholder="ABC123">
+                </div>
+                <div style="display: flex; align-items: center; margin: 20px 0;">
+                    <p style="color: #555555;  width: 300px;">Campaign Type * </p>
+                    <select id="myDropdown" name="myDropdown" class="storeOptimizationDropdown">
+                        <option value="option1">Select Campaign Type</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                        <option value="option3">Option 4</option>
+                    </select>
+                </div>
+                <div style="display: flex; align-items: center; margin: 20px 0;">
+                    <p style="color: #555555;  width: 300px;">Product Name * </p>
+                    <select id="myDropdown" name="myDropdown" class="storeOptimizationDropdown">
+                        <option value="option1">Search or select product</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                        <option value="option3">Option 4</option>
+                    </select>
+                </div>
+                <div style="display: flex; align-items: center; margin: 20px 0;">
+                    <p style="color: #555555;  width: 300px;">Retailer Name * </p>
+                    <select id="myDropdown" name="myDropdown" class="storeOptimizationDropdown">
+                        <option value="option1">KwikEMart</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                        <option value="option3">Option 4</option>
+                    </select>
+                </div>
+                <div style="display: flex; align-items: center; margin: 20px 0;">
+                    <p style="color: #555555;  width: 300px;">Start & End Dates *</p>
+                    <div style="display: flex; justify-content: space-between; gap: 20px;"> 
+                        <input class="storeOptimizationInputDate" type="date" placeholder="Start Date">
+                        <input class="storeOptimizationInputDate" type="date" placeholder="End Date">
+                    </div>
+                </div>
+                <div style="display: flex; align-items: center; margin: 20px 0;">
+                    <p style="color: #555555; width: 300px;">Media Type *</p>
+                    <div style="display: flex; gap: 20px;">
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <p style="font-size: 14px; color: #555555; margin-top: 2px;">Digital</p>
+                        </label>
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <p style="font-size: 14px; color: #555555; margin-top: 2px;">CTV</p>
+                        </label>
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <p style="font-size: 14px; color: #555555; margin-top: 2px;">Linear</p>
+                        </label>
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <p style="font-size: 14px; color: #555555; margin-top: 2px;">Social</p>
+                        </label>
+                    </div>
+                </div>
+                <div style="display: flex; align-items: center; margin: 20px 0;">
+                    <p style="color: #555555;  width: 300px;">Approximate Impressions</p>
+                    <div style="display: flex; align-items: center; gap: 10px; width: 70%;">
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <p>Digital</p>
+                            <input style="width: auto; padding: 10px;" type="text" placeholder="1200">
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <p>Linear</p>
+                            <input style="width: auto; padding: 10px;" type="text" placeholder="2500">
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; align-items: center; margin: 20px 0;">
+                    <p style="color: #555555;  width: 300px;">Approximate Investment *</p>
+                    <div style="display: flex; gap: 10px; align-items: center;">
+                        <p style="font-size: large; color: #555555;">$</p>
+                        <input style="width: auto; padding: 10px;" type="text" placeholder="20.00">
+                    </div>
+                </div>
+
+                <div style="display: flex; align-items: center; margin: 20px 0;">
+                    <p style="color: #555555;  width: 300px;">Additional Notes</p>
+                    <input style="width: 400px; padding: 10px; min-height: 100px;" type="text" placeholder="Add notes if any">
+                </div>
+            </div>
+        </div>
+        <!-- --- footer --- -->
+        <footer class="footerContainerMain">
+            Powered by
+            <img src="/assets/logo_grey 1.svg" alt="footer-logo">
+        </footer>
+    </body>
+</html>
