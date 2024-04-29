@@ -23,15 +23,15 @@
                 <div class="navRightOne">
                     <ul style="list-style: none; display: flex; align-items: center; justify-content: space-between; width: 400px;">
                         <li style="display: flex; align-items: center; gap: 2px;">
-                            <p>Campaigns</p>
+                            <p style="margin-bottom: 0;">Campaigns</p>
                             <span>
-                                <img src="/assets/chevron-down.svg" style="padding-top: 5px;" alt="">
+                                <img src="/assets/chevron-down.svg" alt="">
                             </span>
                         </li>
                         <li style="display: flex; align-items: center; gap: 2px;">
-                            <p>Tools</p>
+                            <p style="margin-bottom: 0;">Tools</p>
                             <span>
-                                <img src="/assets/chevron-down.svg" style="padding-top: 5px;" alt="">
+                                <img src="/assets/chevron-down.svg" alt="">
                             </span>
                         </li>
                         <li>Library</li>
@@ -49,7 +49,7 @@
                     </div>
                     <div class="profileContainer">
                         <img class="profileIcon" src="/assets/people-mosaic_3 1.svg" alt="profile">
-                        <p style="color: black;">Jason Smith</p>
+                        <p style="color: black; margin-bottom: 0;">Jason Smith</p>
                         <i class="fa-solid fa-angle-down" style="color: white;"></i>
                     </div>
                 </div>
@@ -57,13 +57,13 @@
         </nav>
         <!-- --- Store Optimization --- -->
         <div class="storeOptimizationContainer" style="padding: 20px;">
-            <div style="display: flex; justify-content: space-between; padding: 40px 40px 20px 40px;">
+            <div style="display: flex; justify-content: space-between; padding: 40px 40px 20px 10px;">
                 <h2>
                     Store Optimization
                 </h2>
                 <button class="exportButton">
                     <img src="/assets/file-export-solid 1.svg" alt="back">
-                    <p style="color: black;">Export</p>
+                    <p style="color: black; margin-bottom: 0;">Export</p>
                 </button>
             </div>
             <div style="padding: 5px;">
@@ -138,20 +138,109 @@
                     </div>
                 </div>
             </div>
-            <div style="background-color: #F5F5F5; margin: 10px; border-radius: 10px; padding: 20px;">
-                <div style="display: flex; gap: 40px; align-items: center;">
+            <div style="background-color: #F5F5F5; margin: 10px; border-radius: 10px; padding-top: 10px;">
+                <div style="display: flex; gap: 40px; align-items: center; margin: 20px;">
                     <div>
                         <p style="font-weight: bold;">Start & End Dates</p>
-                        <div style="display: flex; gap: 20px;"> 
+                        <div style="display: flex; gap: 20px;">
                             <input class="storeOptimizationInputDate" type="date" placeholder="Start Date">
                             <input class="storeOptimizationInputDate" type="date" placeholder="End Date">
                         </div>
-                        <p style="background-color: white; padding: 10px; text-align: center; margin-top: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">Duration : <span style="font-weight: bold;">4 weeks</span></p>
+                        <p style="background-color: white; padding: 10px; text-align: center; margin-top: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
+                            Duration :
+                            <span style="font-weight: bold;">4 weeks</span>
+                        </p>
                     </div>
                     <div style="display: flex; align-items: center; gap: 30px; padding: 20px; background-color: white; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
                         <img src="./assets/home.svg" alt="">
-                        <p>Total Stores: <span style="font-weight: bold;">4567</span></p>
+                        <p>
+                            Total Stores:
+                            <span style="font-weight: bold;">4567</span>
+                        </p>
                     </div>
+                </div>
+                <div style="background-color: rgba(0, 0, 0, 0.05); padding: 10px;">
+                    <div style="padding: 10px;">
+                        <div>
+                            <p style="font-weight: bold;">No of impressions</p>
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="15,203,123"
+                                    style="width: 120px; text-align: center;"
+                                >
+                                <div class="progress" style="width: 250px;">
+                                    <div
+                                        class="progress-bar"
+                                        role="progressbar"
+                                        style="width: 25%"
+                                        aria-valuenow="25"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                    ></div>
+                                </div>
+                                <img src="./assets/Lock.svg" alt="">
+                            </div>
+                        </div>
+                        <div style="margin-top: 20px;">
+                            <p style="font-weight: bold;">No. of Stores Targeted</p>
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="15,203,123"
+                                    style="width: 120px; text-align: center;"
+                                >
+                                <div class="progress" style="width: 250px;">
+                                    <div
+                                        class="progress-bar"
+                                        role="progressbar"
+                                        style="width: 25%"
+                                        aria-valuenow="25"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                    ></div>
+                                </div>
+                                <img src="./assets/Lock.svg" alt="">
+                            </div>
+                        </div>
+                        <div style="margin-top: 20px;">
+                            <p style="font-weight: bold;">Weekly Impressions / Store <img src="./assets/_.svg" alt=""> </p>
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="15,203,123"
+                                    style="width: 120px; text-align: center;"
+                                >
+                                <div class="progress" style="width: 250px;">
+                                    <div
+                                        class="progress-bar"
+                                        role="progressbar"
+                                        style="width: 25%"
+                                        aria-valuenow="25"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                    ></div>
+                                </div>
+                                <img src="./assets/Lock-red.svg" alt="">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div></div>
+                </div>
+                <div style="padding: 20px;">
+                    <p style="font-weight: bold;">Additional Notes</p>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" style="width: 40%;" rows="3"></textarea>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding: 10px;">
+                <button type="button" class="btn btn-outline-primary" style="color: rgba(26, 78, 153, 1); outline-color: rgba(26, 78, 153, 1); font-weight: bold;">Reset to default</button>
+                <div>
+                    <button type="button" class="btn btn-outline-primary" style="color: rgba(26, 78, 153, 1); outline-color: rgba(26, 78, 153, 1); font-weight: bold;">Cancel</button>
+                    <button type="button" class="btn btn-outline-primary" style="color: white; outline-color: rgba(26, 78, 153, 1); font-weight: bold; background-color: rgba(26, 78, 153, 1);">Save Targeting Info</button>
                 </div>
             </div>
         </div>
