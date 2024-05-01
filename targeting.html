@@ -15,42 +15,85 @@
     <body>
         <div class="bgPrimaryContainer"></div>
         <!-- navbar component -->
-        <nav class="navContainer">
-            <div>
-                <img src="/assets/logo.svg" alt="logo">
-            </div>
-            <div class="navRightContainer">
-                <div class="navRightOne">
-                    <ul style="list-style: none; display: flex; align-items: center; justify-content: space-between; width: 400px;">
-                        <li style="display: flex; align-items: center; gap: 2px;">
-                            <p style="margin-bottom: 0;">Campaigns</p>
-                            <span>
-                                <img src="/assets/chevron-down.svg" alt="">
-                            </span>
-                        </li>
-                        <li style="display: flex; align-items: center; gap: 2px;">
-                            <p style="margin-bottom: 0;">Tools</p>
-                            <span>
-                                <img src="/assets/chevron-down.svg" alt="">
-                            </span>
-                        </li>
-                        <li>Library</li>
-                        <li>
-                            TV Eyes
-                            <span style="font-size: smaller;">(Beta)</span>
-                        </li>
-                    </ul>
-                </div>
-                <p class="navDiv"></p>
-                <div class="navRightTwo">
-                    <div>
-                        <img class="houseIcon" src="/assets/envelope-solid 1.svg" alt="envelope">
-                        <p class="messageCount">2</p>
-                    </div>
-                    <div class="profileContainer">
-                        <img class="profileIcon" src="/assets/people-mosaic_3 1.svg" alt="profile">
-                        <p style="color: black; margin-bottom: 0;">Jason Smith</p>
-                        <i class="fa-solid fa-angle-down" style="color: white;"></i>
+        <nav class="navbar navbar-expand-lg navbar-light py-4" style="padding-left: 100px; padding-right: 100px;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="/assets/logo.svg" alt="logo">
+                </a>
+                <div class="ml-auto">
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav" style="display: flex; align-items: center; gap: 25px;">
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link dropdown-toggle"
+                                    href="#"
+                                    id="campaignsDropdown"
+                                    role="button"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                >
+                                    Campaigns
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="campaignsDropdown">
+                                    <!-- Add campaign links here --></div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link dropdown-toggle"
+                                    href="#"
+                                    id="toolsDropdown"
+                                    role="button"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                >
+                                    Tools
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="toolsDropdown">
+                                    <!-- Add tool links here --></div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Library</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">TV Eyes (Beta)</a>
+                            </li>
+                            <p class="navDiv"></p>
+                            <li class="nav-item">
+                                <div>
+                                    <img class="houseIcon" src="/assets/envelope-solid 1.svg" alt="envelope">
+                                    <p class="messageCount">2</p>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link dropdown-toggle"
+                                    href="#"
+                                    id="userDropdown"
+                                    role="button"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                >
+                                    <img class="profileIcon" src="/assets/people-mosaic_3 1.svg" alt="profile">
+                                    Jason Smith
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                                    <!-- Add user links here --></div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
