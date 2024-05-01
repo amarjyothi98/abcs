@@ -133,37 +133,51 @@
                 <p style="font-weight: bold;">Define Campaign</p>
                 <div style="display: flex; align-items: center; margin: 20px 0;">
                     <p style="color: #555555; width: 300px;">Campaign Name *</p>
-                    <input class="storeOptimizationInput" type="text" placeholder="Campaign ABC">
+                    <input
+                        type="text"
+                        class="form-control"
+                        id=""
+                        aria-describedby=""
+                        placeholder="Campaign ABC"
+                        style="width: 40%;"
+                    >
                 </div>
                 <div style="display: flex; align-items: center; margin: 20px 0;">
                     <p style="color: #555555; width: 300px;">Campaign ID *</p>
-                    <input class="storeOptimizationInput" type="text" placeholder="ABC123">
+                    <input
+                        type="text"
+                        class="form-control"
+                        id=""
+                        aria-describedby=""
+                        placeholder="ABC123"
+                        style="width: 40%;"
+                    >
                 </div>
                 <div style="display: flex; align-items: center; margin: 20px 0;">
                     <p style="color: #555555;  width: 300px;">Campaign Type *</p>
-                    <select id="myDropdown" name="myDropdown" class="storeOptimizationDropdown">
-                        <option value="option1">Select Campaign Type</option>
-                        <option value="option2">Option 2</option>
-                        <option value="option3">Option 3</option>
-                        <option value="option3">Option 4</option>
+                    <select class="form-select" aria-label="Default select example" style="width: 40%;">
+                        <option selected>Select Campaign Type</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
                     </select>
                 </div>
                 <div style="display: flex; align-items: center; margin: 20px 0;">
                     <p style="color: #555555;  width: 300px;">Product Name *</p>
-                    <select id="myDropdown" name="myDropdown" class="storeOptimizationDropdown">
-                        <option value="option1">Search or select product</option>
-                        <option value="option2">Option 2</option>
-                        <option value="option3">Option 3</option>
-                        <option value="option3">Option 4</option>
+                    <select class="form-select" aria-label="Default select example" style="width: 40%;">
+                        <option selected>Search or select product</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
                     </select>
                 </div>
                 <div style="display: flex; align-items: center; margin: 20px 0;">
                     <p style="color: #555555;  width: 300px;">Retailer Name *</p>
-                    <select id="myDropdown" name="myDropdown" class="storeOptimizationDropdown">
-                        <option value="option1">KwikEMart</option>
-                        <option value="option2">Option 2</option>
-                        <option value="option3">Option 3</option>
-                        <option value="option3">Option 4</option>
+                    <select class="form-select" aria-label="Default select example" style="width: 40%;">
+                        <option selected>KwikEMart</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
                     </select>
                 </div>
                 <div style="display: flex; align-items: center; margin: 20px 0;">
@@ -176,38 +190,74 @@
                 <div style="display: flex; align-items: center; margin: 20px 0;">
                     <p style="color: #555555; width: 300px;">Media Type *</p>
                     <div style="display: flex; gap: 20px;">
-                        <label class="checkbox-container">
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                            <p style="font-size: 14px; color: #555555; margin-top: 2px;">Digital</p>
-                        </label>
-                        <label class="checkbox-container">
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                            <p style="font-size: 14px; color: #555555; margin-top: 2px;">CTV</p>
-                        </label>
-                        <label class="checkbox-container">
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                            <p style="font-size: 14px; color: #555555; margin-top: 2px;">Linear</p>
-                        </label>
-                        <label class="checkbox-container">
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                            <p style="font-size: 14px; color: #555555; margin-top: 2px;">Social</p>
-                        </label>
+                        <div class="form-check">
+                            <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="defaultCheck1"
+                            >
+                            <label class="form-check-label" for="defaultCheck1">
+                                Digital
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="defaultCheck1"
+                            >
+                            <label class="form-check-label" for="defaultCheck1">
+                                CTV
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="defaultCheck1"
+                            >
+                            <label class="form-check-label" for="defaultCheck1">
+                                Linear
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="defaultCheck1"
+                            >
+                            <label class="form-check-label" for="defaultCheck1">
+                                Social
+                            </label>
+                        </div>
                     </div>
                 </div>
                 <div style="display: flex; align-items: center; margin: 20px 0;">
                     <p style="color: #555555;  width: 300px;">Approximate Impressions</p>
                     <div style="display: flex; align-items: center; gap: 10px; width: 70%;">
                         <div style="display: flex; align-items: center; gap: 10px;">
-                            <p>Digital</p>
-                            <input style="width: auto; padding: 10px;" type="text" placeholder="1200">
+                            <p style="margin-bottom: 0;">Digital</p>
+                            <input
+                                type="text"
+                                class="form-control"
+                                id=""
+                                aria-describedby=""
+                                placeholder="1200"
+                            >
                         </div>
                         <div style="display: flex; align-items: center; gap: 10px;">
-                            <p>Linear</p>
-                            <input style="width: auto; padding: 10px;" type="text" placeholder="2500">
+                            <p style="margin-bottom: 0;">Linear</p>
+                            <input
+                                type="text"
+                                class="form-control"
+                                id=""
+                                aria-describedby=""
+                                placeholder="2500"
+                            >
                         </div>
                     </div>
                 </div>
@@ -215,13 +265,19 @@
                     <p style="color: #555555;  width: 300px;">Approximate Investment *</p>
                     <div style="display: flex; gap: 10px; align-items: center;">
                         <p style="font-size: large; color: #555555;">$</p>
-                        <input style="width: auto; padding: 10px;" type="text" placeholder="20.00">
+                        <input
+                            type="text"
+                            class="form-control"
+                            id=""
+                            aria-describedby=""
+                            placeholder="20.00"
+                        >
                     </div>
                 </div>
                 <div style="display: flex; align-items: center; margin: 20px 0;">
                     <p style="color: #555555;  width: 300px;">Additional Notes</p>
                     <div>
-                        <input style="width: 400px; padding: 10px; min-height: 100px;" type="text" placeholder="Add notes if any">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="width: 70%;"></textarea>
                         <div style="display: flex; gap: 10px; align-items: center; margin-top: 10px;">
                             <input type="checkbox">
                             <p style="color: gray; font-size: smaller; margin-bottom: 0;">I will use the data provided by ABCS Insights for the sole purpose of measuring and optimizing this campaign.</p>
