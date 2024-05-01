@@ -1,24 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="subnav.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subnav</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .subnav {
+      background-color: #f8f9fa;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    }
+
+    .subnav-item {
+      display: flex;
+      align-items: center;
+      padding: 0.5rem;
+      color: #212529;
+      text-decoration: none;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    .subnav-item:hover {
+      background-color: #e9ecef;
+      border-radius: 0.25rem;
+    }
+
+    .subnav-item .icon {
+      margin-right: 0.5rem;
+    }
+
+    .subnav-divider {
+      border-bottom: 1px solid #dee2e6;
+      margin: 0.5rem 0;
+    }
+  </style>
 </head>
 <body>
-    <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-        <div style="padding: 20px; width: 150px;" class="subnavContainer">
-            <div style="margin: 10px; display: flex; gap: 15px;">
-                <img src="/assets/user-solid 1.svg" alt="">
-                <p style="color: #555555;">My Account</p>
-            </div>
-            <hr>
-            <div style="margin: 10px; display: flex; gap: 15px;">
-                <img src="/assets/right-from-bracket-solid 1.svg" alt="">
-                <p style="color: #555555;">Logout</p>
-            </div>
-        </div>
+  <div class="container mt-5" style="width: 15%;">
+    <div class="subnav">
+      <a href="#" class="subnav-item">
+        <span class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+          </svg>
+        </span>
+        My Account
+      </a>
+      <div class="subnav-divider"></div>
+      <a href="#" class="subnav-item">
+        <span class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+            <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+          </svg>
+        </span>
+        Logout
+      </a>
     </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
