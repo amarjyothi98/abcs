@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subnav</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .subnav {
+      background-color: #f8f9fa;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    }
+
+    .subnav-item {
+      display: flex;
+      align-items: center;
+      padding: 0.5rem;
+      color: #212529;
+      text-decoration: none;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    .subnav-item:hover {
+      background-color: #e9ecef;
+      border-radius: 0.25rem;
+    }
+
+    .subnav-item .icon {
+      margin-right: 0.5rem;
+    }
+
+    .subnav-divider {
+      border-bottom: 1px solid #dee2e6;
+      margin: 0.5rem 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5" style="width: 20%;">
+    <div class="subnav">
+      <a href="#" class="subnav-item">
+        Impressions tracking
+
+      </a>
+      <div class="subnav-divider"></div>
+      <a href="#" class="subnav-item">
+        Management
+      </a>
+      <div class="subnav-divider"></div>
+      <a href="#" class="subnav-item">
+        Reporting
+      </a>
+      <div class="subnav-divider"></div>
+      <a href="#" class="subnav-item">
+        Optimization
+      </a>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
